@@ -14,7 +14,8 @@ class ISelenium(unittest.TestCase):
     # 读入配置文件
     def get_config(self):
         config = configparser.ConfigParser()
-        config.read(os.path.join(os.environ['HOME'], 'iselenium.ini'))
+        path = "D:\\narak\jenkins_slave\workspace\iSelenium_Python\iSelenium_Python"
+        config.read(os.path.join(path, 'iselenium.ini'))
         return config
 
     def tearDown(self):
